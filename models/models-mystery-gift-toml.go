@@ -1,8 +1,5 @@
 package models
 
-type MysteryGifts struct {
-	MysteryGiftsData []MysteryGift `toml:"mysteryGift"`
-}
 type MysteryGift struct {
 	Name     string      `toml:"name"`
 	GiftType string      `toml:"giftType"`
