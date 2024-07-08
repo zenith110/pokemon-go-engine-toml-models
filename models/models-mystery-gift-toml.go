@@ -1,14 +1,14 @@
 package models
 
 type MysteryGift struct {
-	Name     string      `toml:"name"`
-	GiftType string      `toml:"giftType"`
-	Pokemon  PokemonGift `toml:"pokemonGift"`
+	Name          string      `toml:"name"`
+	GiftType      string      `toml:"giftType"`
+	Pokemon       PokemonGift `toml:"pokemonGift"`
+	BeginningDate string      `toml:"beginningDate"`
+	EndDate       string      `toml:"endDate"`
 }
 type PokemonGift struct {
 	OriginalTrainer  string      `toml:"originalTrainer"`
-	BeginningDate    string      `toml:"beginningDate"`
-	EndDate          string      `toml:"endDate"`
 	ID               string      `toml:"id"`
 	Species          string      `toml:"species"`
 	Types            []string    `toml:"types"`
