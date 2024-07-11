@@ -38,9 +38,9 @@ type PokemonGiftServer struct {
 }
 
 type MysteryGiftServer struct {
-	Name          string              `toml:"name"`
-	GiftType      string              `toml:"giftType"`
-	BeginningDate string              `toml:"beginningDate"`
-	EndDate       string              `toml:"endDate"`
-	Pokemongift   []PokemonGiftServer `toml:"pokemongift"`
+	Name          string            `toml:"name"`
+	GiftType      string            `toml:"giftType"`
+	BeginningDate string            `toml:"beginningDate"`
+	EndDate       string            `toml:"endDate"`
+	Pokemongift   PokemonGiftServer `toml:"pokemongift"`
 }
