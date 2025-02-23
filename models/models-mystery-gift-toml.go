@@ -35,6 +35,7 @@ type PokemonGiftServer struct {
 	Types            []string `toml:"types"`
 	Abilites         []string `toml:"abilites"`
 	Stats            []int    `toml:"stats"`
+	Moves            []string `toml:"moves"`
 }
 
 type MysteryGiftServer struct {
