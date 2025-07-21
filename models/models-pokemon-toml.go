@@ -15,7 +15,8 @@ type Moves struct {
 type Evolutions struct {
 	Name    string   `toml:"name"`
 	Methods []string `toml:"methods"`
-	ID      string   `toml:"id"`
+	PokemonID      string   `toml:"pokemonId"`
+	EvolutionID string `toml:"evolutionId"`
 }
 type Stats struct {
 	Hp             int `toml:"hp"`
